@@ -1,0 +1,32 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0583824d4705e448904aea0462291d, type: 3}
+  m_Name: SpawnEnemyListSO
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnEnemyListSO
+  enemy:
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f600, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f601, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f602, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f603, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f604, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f605, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f606, type: 3}
+  - {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f607, type: 3}
+  bossEnemy:
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f701, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f702, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f703, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f704, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f705, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f706, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f707, type: 3}
+  - {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f708, type: 3}

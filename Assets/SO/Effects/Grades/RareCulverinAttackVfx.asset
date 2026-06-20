@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bba7000664dcbb46ab426145f597365, type: 3}
+  m_Name: RareCulverinAttackVfx
+  m_EditorClassIdentifier: Assembly-CSharp::CoreSystem.EffectSystem.TowerAttackVfxDataSO
+  effectPrefab: {fileID: 7610876922547945566, guid: 1a70ca9deb064f741976e2d7738472e8, type: 3}
+  scale: 4
+  lifetime: 1.4
+  positionOffset: {x: 0, y: 0, z: 0}
+  impactPlacement: 2
+  fastProjectileImpact: 0
+  directDamageMultiplier: 0
+  effectDamageMultiplier: 1
+  damageRadius: 4.5
+  damageTickInterval: 0
+  includePrimaryInEffectDamage: 0
+  followPrimaryTarget: 0
+  playbackSpeed: 2.8
+  particleWarmupSkip: 0

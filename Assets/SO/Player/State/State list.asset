@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd21d445c74103941ba820b0c55da5, type: 3}
+  m_Name: State list
+  m_EditorClassIdentifier: Assembly-CSharp::Agents.FSM.StateListSO
+  generatePath: C:/Users/admin/TowerDefense/Assets/Scripts/Enum
+  enumName: 'PlayerState '
+  states:
+  - {fileID: 11400000, guid: 94517a6c1656db04ca4ff4b3c50b343e, type: 2}
+  - {fileID: 11400000, guid: 4acf5af73caabdc49bb9c96bd3599b92, type: 2}
+  - {fileID: 11400000, guid: 82c71dbb0f0c07b4b9a128d7654b9412, type: 2}
+  - {fileID: 11400000, guid: 224083b37a2e70741947bd5fec4bf210, type: 2}

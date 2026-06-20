@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b3c4d5e6f7488990a1b2c3d4e5f901, type: 3}
+  m_Name: TutorialWaveConfig
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialWaveConfigSO
+  victoryWave: 6
+  preFirstWaveDelay: 3
+  startingGold: 9999
+  maxFieldEnemies: 999
+  maxLeakCount: 9999
+  waveMultiply: 1
+  bossHealthMultiplier: 1.2
+  bossMoveSpeedMultiplier: 0.85
+  bossRewardMultiplier: 3
+  bossScaleMultiplier: 1.2
+  bossWaveDurationSeconds: 90
+  waves:
+  - title: "\uC6E8\uC774\uBE0C 1 \u2014 \uAE30\uBCF8 \uC870\uC791"
+    message: "\uD558\uB2E8\uC758 '\uC18C\uD658' \uBC84\uD2BC\uC73C\uB85C \uD0C0\uC6CC\uB97C \uBC30\uCE58\uD558\uC138\uC694.\n\uC801\uC744 \uCC98\uCE58\uD558\uBA74 \uCF54\uC778\uC744 \uC5BB\uC2B5\uB2C8\uB2E4.\n\uC0C1\uB2E8 \uD0C0\uC774\uBA38\uAC00 0\uC774 \uB418\uBA74 \uB2E4\uC74C \uC6E8\uC774\uBE0C\uAC00 \uC2DC\uC791\uB429\uB2C8\uB2E4."
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f600, type: 3}
+    bossPrefab: {fileID: 0}
+    isBossWave: 0
+    maxEnemyCount: 5
+    waveDelay: 35
+    spawnDelay: 1.4
+  - title: "\uC6E8\uC774\uBE0C 2 \u2014 \uD0C0\uC6CC \uC885\uB958"
+    message: "\uC18C\uD658\uB41C \uD0C0\uC6CC\uB294 \uD65C, \uCF5C\uBC84\uB9B0, \uBBF8\uC0AC\uC77C \uC138 \uC885\uB958\uC785\uB2C8\uB2E4.\n\uD0C0\uC6CC\uB97C \uC6B0\uD074\uB9AD\uD558\uBA74 \uC815\uBCF4 \uD328\uB110\uC5D0\uC11C \uACF5\uACA9\uB825\uACFC \uB4F1\uAE09\uC744 \uD655\uC778\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f603, type: 3}
+    bossPrefab: {fileID: 0}
+    isBossWave: 0
+    maxEnemyCount: 6
+    waveDelay: 35
+    spawnDelay: 1.3
+  - title: "\uC6E8\uC774\uBE0C 3 \u2014 \uD0C0\uC6CC \uD569\uC131"
+    message: "\uAC19\uC740 \uB4F1\uAE09, \uAC19\uC740 \uC885\uB958\uC758 \uD0C0\uC6CC\uB97C \uB4DC\uB798\uADF8\uD574\uC11C \uACA9\uCE58\uBA74 \uC0C1\uC704 \uB4F1\uAE09\uC73C\uB85C \uD569\uC131\uB429\uB2C8\uB2E4.\n\uD569\uC131\uC5D0 \uC131\uACF5\uD558\uBA74 \uB354 \uAC15\uB825\uD55C \uD0C0\uC6CC\uAC00 \uB429\uB2C8\uB2E4.\n\uC2E4\uD328\uD558\uBA74 \uB4DC\uB798\uADF8\uD55C \uD0C0\uC6CC 1\uAC1C\uB9CC \uC0AC\uB77C\uC9C0\uACE0, \uB0A8\uC740 \uD0C0\uC6CC\uB294 \uC720\uC9C0\uB429\uB2C8\uB2E4."
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f604, type: 3}
+    bossPrefab: {fileID: 0}
+    isBossWave: 0
+    maxEnemyCount: 6
+    waveDelay: 35
+    spawnDelay: 1.2
+  - title: "\uC6E8\uC774\uBE0C 4 \u2014 \uC804\uD22C \uC2A4\uD0AF"
+    message: "\uC18C\uD658 \uBC84\uD2BC \uC67C\uCABD\uC5D0 \uC804\uD22C \uC2A4\uD0AF \uBC84\uD2BC 2\uAC1C\uAC00 \uC788\uC2B5\uB2C8\uB2E4.\n\n\u2022 \uBAB9 \uC815\uC9C0 \u2014 \uD544\uB4DC\uC758 \uBAA8\uB4E0 \uC801\uC744 4\uCD08\uAC04 \uBA48\uCD09\uB2C8\uB2E4. (\uCFE8\uD0C0\uC784 75\uCD08)\n\u2022 \uC804\uCCB4 \uD53C\uD574 \u2014 \uBAA8\uB4E0 \uC801\uC5D0\uAC8C \uCD5C\uB300 \uCCB4\uB825 18% \uD53C\uD574. (\uCFE8\uD0C0\uC784 90\uCD08)\n\n\uC801\uC774 \uB9CE\uC774 \uBAB0\uB9B4 \uB54C \uC704\uAE30 \uD0C8\uCD9C\uC6A9\uC73C\uB85C \uC0AC\uC6A9\uD558\uC138\uC694."
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f601, type: 3}
+    bossPrefab: {fileID: 0}
+    isBossWave: 0
+    maxEnemyCount: 7
+    waveDelay: 35
+    spawnDelay: 1.1
+  - title: "\uC6E8\uC774\uBE0C 5 \u2014 \uC885\uB958\uBCC4 \uC5C5\uADF8\uB808\uC774\uB4DC"
+    message: "\uC6B0\uCE21 \uD558\uB2E8\uC758 '\uAC15\uD654' \uBC84\uD2BC\uC744 \uB20C\uB7EC \uD65C/\uB300\uD3EC/\uBBF8\uC0AC\uC77C \uC885\uB958\uBCC4 \uACF5\uACA9\uB825\uC744 \uC62C\uB9B4 \uC218 \uC788\uC2B5\uB2C8\uB2E4.\n\uD569\uC131 \uD655\uB960\uACFC \uC18C\uD658 \uB4F1\uAE09 \uD655\uB960\uB3C4 \uD568\uAED8 \uAC15\uD654\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f602, type: 3}
+    bossPrefab: {fileID: 0}
+    isBossWave: 0
+    maxEnemyCount: 7
+    waveDelay: 35
+    spawnDelay: 1
+  - title: "\uC6E8\uC774\uBE0C 6 \u2014 \uBCF4\uC2A4"
+    message: "\uD544\uB4DC\uC5D0 \uC801\uC774 80\uB9C8\uB9AC\uB97C \uB118\uC73C\uBA74 \uD328\uBC30\uD569\uB2C8\uB2E4. \uC0C1\uB2E8 '\uD544\uB4DC \uC801' \uCE74\uC6B4\uD130\uB97C \uD655\uC778\uD558\uC138\uC694.\n\uC57D\uD55C \uBCF4\uC2A4\uAC00 \uB4F1\uC7A5\uD569\uB2C8\uB2E4. \uCC98\uCE58\uD558\uBA74 \uD29C\uD1A0\uB9AC\uC5BC\uC774 \uC644\uB8CC\uB429\uB2C8\uB2E4!"
+    enemyPrefab: {fileID: 475830405676779459, guid: a1b2c3d4e5f6478990a1b2c3d4e5f606, type: 3}
+    bossPrefab: {fileID: 475830405676779459, guid: b1b2c3d4e5f6478990a1b2c3d4e5f706, type: 3}
+    isBossWave: 1
+    maxEnemyCount: 1
+    waveDelay: 60
+    spawnDelay: 1

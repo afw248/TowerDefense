@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40aeda66fa8cbb04ea408b1958bf1a9d, type: 3}
+  m_Name: MissileProjectileData
+  m_EditorClassIdentifier: Assembly-CSharp::TowerProjectileDataSO
+  projectilePrefab: {fileID: 6697420480933594759, guid: d6c7b7ad396ce4243a1a5dcd51397df4, type: 3}
+  speed: 44
+  turnSpeedDegrees: 320
+  straightPursuitDistance: 3
+  hitRadius: 0.7
+  maxLifetime: 5
+  aimHeightOffset: {x: 0, y: 1, z: 0}
+  spawnHitGraceDuration: 0.15
+  useGroundImpactPoint: 1

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a2336d536c61e4a9723660a9f87961, type: 3}
+  m_Name: NormalMissileVariant
+  m_EditorClassIdentifier: Assembly-CSharp::Tower.TowerVariantSO
+  grade: 0
+  archetype: 2
+  playerData: {fileID: 11400000, guid: 4d3173f835ffeec49b23fecf8c10e808, type: 2}
+  attackVfx: {fileID: 11400000, guid: 966f807926f3ee54a897828b4bd76c46, type: 2}
+  towerPrefab: {fileID: 6304171116053184874, guid: 910cbc14931626641997761160cb818a, type: 3}
+  fattyPolyVisualPrefab: {fileID: 1955401418672640, guid: 1ea26a904d6a44b4e9455996be9e19c1, type: 3}
