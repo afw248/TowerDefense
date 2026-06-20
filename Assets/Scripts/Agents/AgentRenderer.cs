@@ -19,6 +19,9 @@ namespace Agents
 
         public void PlayClip(int clipHash, float normalizedTime, float crossFadeDuration, int layerIndex = 0)
         {
+            if (Animator == null)
+                return;
+
             Animator.CrossFadeInFixedTime(clipHash, crossFadeDuration, layerIndex, normalizedTime);
             Animator.Update(0f);
         }

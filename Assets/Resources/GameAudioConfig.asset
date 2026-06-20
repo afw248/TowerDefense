@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdcf686030ae1c54da4863667120d7c3, type: 3}
+  m_Name: GameAudioConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GameAudioConfigSO
+  titleBgm: {fileID: 8300000, guid: 81a5bd631319d48468c5b9edd0889323, type: 3}
+  gameplayBgm: {fileID: 8300000, guid: 98334a62f6bc56c46aa24c212531563c, type: 3}
+  uiClick: {fileID: 8300000, guid: 20fc582e04e8db948993fd37add53e33, type: 3}
+  uiOpen: {fileID: 8300000, guid: b84d3e840a9de6644a33af0554212508, type: 3}
+  uiClose: {fileID: 8300000, guid: 9bedda2ce78d98c4ea449003d537c0fe, type: 3}
+  bowFire: {fileID: 8300000, guid: 04c78c1af91465b458bd4c2f3bcb0468, type: 3}
+  culverinFire: {fileID: 8300000, guid: fdc7915a95912ba4cbc4b526b5f5542c, type: 3}
+  missileLaunch: {fileID: 8300000, guid: 5e2d0cf7cfbe9824dbc5bd442f229b17, type: 3}
+  explosion: {fileID: 8300000, guid: 28c29f41399d47e4b912a9532da85bf4, type: 3}
+  enemyHit: {fileID: 8300000, guid: 70fe71c1a5be3d04185bf976fd2670f5, type: 3}
+  enemyDeath: {fileID: 8300000, guid: 9a95715eff041434c9c068b7985a4c76, type: 3}
+  waveStart: {fileID: 8300000, guid: 049c98b3d455ce34bbce84549f3a1076, type: 3}
+  bossWarning: {fileID: 8300000, guid: 0e65aa76c66c2aa418b8524bdeb6d64a, type: 3}
+  coin: {fileID: 8300000, guid: b6a0524bd3f47af43b81bebcd9f5259c, type: 3}
+  towerPlace: {fileID: 8300000, guid: 56085402809b2bd488530cf895492c9a, type: 3}
+  towerRemove: {fileID: 8300000, guid: c74024545fb4fae4e8bc9acd7da34043, type: 3}
+  mergeSuccess: {fileID: 8300000, guid: c4d7cb8d81206c2418b6deda821d768a, type: 3}
+  mergeFail: {fileID: 8300000, guid: 2e74b2659ad53c54f9eb7fee1b397ed9, type: 3}
+  epicTowerReveal: {fileID: 8300000, guid: b84d3e840a9de6644a33af0554212508, type: 3}
+  legendaryTowerReveal: {fileID: 8300000, guid: 0e65aa76c66c2aa418b8524bdeb6d64a, type: 3}
+  victory: {fileID: 8300000, guid: d8727f08dea0eaa4793e135f8c79a64c, type: 3}
+  defeat: {fileID: 8300000, guid: 30fad155506500f4d8c79a5802e2dade, type: 3}

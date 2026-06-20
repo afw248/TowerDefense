@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848cb36f7fcf9c74d8598db42c2f79a4, type: 3}
+  m_Name: EconomyConfig
+  m_EditorClassIdentifier: Assembly-CSharp::EconomyConfigSO
+  startingGold: 240
+  summonCost: 40
+  summonCostMultiplier: 1.05
+  waveGoldInterestPercent: 0.02
+  maxUnitCapacity: 28
+  maxFieldEnemies: 80
+  defaultEnemyReward: {fileID: 11400000, guid: 9f8e7d6c5b4a39281706152433445566, type: 2}
+  maxLeakCount: 100
+  sellRefundNormal: 15
+  sellRefundRare: 25
+  sellRefundEpic: 45
+  sellRefundLegendary: 75
+  mergeChanceBonusPerLevel: 0.8
+  maxMergeUpgradeLevel: 5
+  mergeChanceMax: 65
+  mergeChanceMaxEpic: 15
+  summonRareBonusPerLevel: 0.4
+  summonEpicBonusPerLevel: 0.25
+  summonLegendaryBonusPerLevel: 0.08
+  maxSummonUpgradeLevel: 5
+  earlySummonPenaltyEndWave: 9
+  earlyRareWeightMultiplier: 0.65
+  earlyEpicWeightMultiplier: 0.5
+  earlyLegendaryWeightMultiplier: 0.3
+  mergeUnlockRareToEpicCost: 500
+  mergeUnlockEpicToLegendaryCost: 1000
+  upgradeBaseCost: 20
+  upgradeAttackBonus: 2
+  upgradeCostMultiplier: 1.18
+  maxUpgradeLevel: 99

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d482a6cb9e70608bfc40c2ce38b72ee4c78c8334fcf0d7b1d75ac4dd95db5481
-size 531
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f635f3a34ebd45e3b68dce916125c0f4, type: 3}
+  m_Name: CulverinNorAttackSkill
+  m_EditorClassIdentifier: Assembly-CSharp::CombatSystem.SkillDataSO
+  skillIndex: 0
+  skillName: AttackSkill
+  cooldown: 0.85
+  damageMultiplier: 1

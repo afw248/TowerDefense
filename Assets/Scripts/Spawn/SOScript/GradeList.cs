@@ -9,8 +9,9 @@ public class GradeList : ScriptableObject
 {
     public string gradeName;
 
-    [Range(0, 100)]
-    public int weight = 10;
+    [Tooltip("소환 가중치 (0~100, 등급별 상대 비율)")]
+    [Range(0f, 100f)]
+    public float weight = 10f;
 
     public List<AbstractPlayer> tower = new();
 }

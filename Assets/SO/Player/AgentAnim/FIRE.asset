@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59d0ae319b6ec64d8c5bd6aa9fec5e4ffe08ed55defebf3858570e523305c237
-size 519
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1f1d58c81748a58839a5f1d6e9d3b9, type: 3}
+  m_Name: FIRE
+  m_EditorClassIdentifier: Assembly-CSharp::GGMLib.AnimatorSystem.AnimParamSO
+  <ParamName>k__BackingField: FIRE
+  <ParamHash>k__BackingField: 1850467451

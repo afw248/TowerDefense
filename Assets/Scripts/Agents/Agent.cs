@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using CombatSystem;
 using GGMLib.ModuleSystem;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Agents
@@ -17,9 +18,19 @@ namespace Agents
 
         protected override void InitializeModules()
         {
+            EnsureEvents();
             base.InitializeModules();
             Health = GetModule<HealthModule>();
             ActionData = GetModule<ActionDataModule>();
+        }
+
+        private void EnsureEvents()
+        {
+            if (OnHit == null)
+                OnHit = new UnityEvent();
+
+            if (OnDeath == null)
+                OnDeath = new UnityEvent();
         }
 
         protected override void AfterInitModules()

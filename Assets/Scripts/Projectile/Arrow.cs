@@ -19,6 +19,6 @@ public class Arrow : AbstractBow , IPoolable
 
     public void ResetItem()
     {
-        throw new System.NotImplementedException();
+        transform.localRotation = Quaternion.identity;
     }
 }

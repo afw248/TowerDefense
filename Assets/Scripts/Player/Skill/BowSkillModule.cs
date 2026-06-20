@@ -1,4 +1,6 @@
-using CombatSystem;
+ï»¿using CombatSystem;
+using CoreSystem.EffectSystem;
+using Agents;
 using UnityEngine;
 
 public class BowSkillModule : PlayerAttackSkill
@@ -10,12 +12,13 @@ public class BowSkillModule : PlayerAttackSkill
     private ParticleSystem dust;
 
     private GameObject _currentTarget;
+    private bool _firedThisSkill;
 
     public override void InitializeSkill(
         ISkillModule skillModule)
     {
         base.InitializeSkill(skillModule);
-        dust.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
+        dust.Stop(/*true,ParticleSystemStopBehavior.StopEmittingAndClear*/);
     }
 
     public override bool CanUseSkill(
@@ -34,35 +37,55 @@ public class BowSkillModule : PlayerAttackSkill
         GameObject target = null)
     {
         _currentTarget = target;
+        _firedThisSkill = false;
 
         base.UseSkill(target);
+        TryFireAndComplete();
     }
 
     protected override void OnDamageCast()
     {
+        TryFireAndComplete();
+    }
+
+    private void TryFireAndComplete()
+    {
+        if (_firedThisSkill)
+            return;
+
         if (_currentTarget == null)
             return;
 
         if (!_currentTarget.activeInHierarchy)
             return;
 
-        dust.Stop(true,ParticleSystemStopBehavior.StopEmittingAndClear);
+        Agent agent = _currentTarget.GetComponentInParent<Agent>();
+        if (agent != null && agent.IsDead)
+            return;
 
+        _firedThisSkill = true;
+
+        dust.Stop(/*true,ParticleSystemStopBehavior.StopEmittingAndClear*/);
         dust.Play();
 
-        Vector3 direction =(_currentTarget.transform.position- firePoint.position).normalized;
-
-        Quaternion rotation =Quaternion.LookRotation(direction);
-
-        _currentTarget.GetComponentInChildren<HealthModule>().ApplyDamage(_ownerPlayer.PlayerData.Attack);
-
-        Debug.Log("È­»ì ¹ß»ç");
+        LaunchHomingProjectile(_currentTarget, firePoint);
+        StopSkill();
     }
+
+    protected override HitEffectDataSO GetProjectileImpactHitEffect() => null;
 
     public override void StopSkill()
     {
         _currentTarget = null;
+        _firedThisSkill = false;
 
         base.StopSkill();
+    }
+
+    public override void ForceStopForDrag()
+    {
+        _currentTarget = null;
+        _firedThisSkill = false;
+        base.ForceStopForDrag();
     }
 }

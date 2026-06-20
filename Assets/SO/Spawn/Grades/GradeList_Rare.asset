@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359e43fe6e228254e902a41da2714731, type: 3}
+  m_Name: GradeList_Rare
+  m_EditorClassIdentifier: Assembly-CSharp::GradeList
+  gradeName: Rare
+  weight: 29.3
+  tower:
+  - {fileID: 3014824285141876726, guid: 6b3d4b03cba3afb4eaa5c1e767596972, type: 3}
+  - {fileID: 2996423023042939539, guid: d9f532206584f044b824132325ec4505, type: 3}
+  - {fileID: 4840224174550651069, guid: e2ed0b206672171408da9c0074f496cc, type: 3}

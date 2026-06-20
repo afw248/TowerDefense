@@ -14881,7 +14881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d66f19183fd44b7b47aea5deb44f1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CombatSystem.HealthModule
-  maxHealth: 1000
+  <maxHealth>k__BackingField: 0
   currentHealth: 0
 --- !u!1 &5888909605929101052
 GameObject:
@@ -14984,7 +14984,7 @@ GameObject:
   - component: {fileID: 987481501143438095}
   - component: {fileID: 3622105870125428472}
   m_Layer: 0
-  m_Name: BowSkillModule
+  m_Name: CulverinSkillModule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15020,8 +15020,15 @@ MonoBehaviour:
   <SkillData>k__BackingField: {fileID: 11400000, guid: 5305229716937d14fb0fbc5d2910536f, type: 2}
   skillParamSO: {fileID: 11400000, guid: 39d47e6967bc8f4488c367f31d3c3468, type: 2}
   crossfadeDuration: 0.15
+  hitEffect: {fileID: 11400000, guid: 458485b5e85046e44a23f06c87accd3c, type: 2}
+  attackVfx: {fileID: 11400000, guid: 0154642532c708347a04cc1e031116c4, type: 2}
+  projectileData: {fileID: 11400000, guid: 2d7d9dd22f7dc1444b6406642413b707, type: 2}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
   firePoint: {fileID: 7694655503242120377}
   dust: {fileID: 8101113389316889007}
+  recoilDustAnchor: {fileID: 0}
 --- !u!1 &6304171116053184874
 GameObject:
   m_ObjectHideFlags: 0
@@ -15033,6 +15040,7 @@ GameObject:
   - component: {fileID: 1987418719517025219}
   - component: {fileID: 2079292328724465723}
   - component: {fileID: 2996423023042939539}
+  - component: {fileID: 324971104410713288}
   m_Layer: 0
   m_Name: NormalCulverin
   m_TagString: Untagged
@@ -15105,6 +15113,21 @@ MonoBehaviour:
   <PlayerData>k__BackingField: {fileID: 11400000, guid: e32c7fac77fd413478521fbc92ee768d, type: 2}
   <playerStates>k__BackingField: {fileID: 11400000, guid: 061e1f8b8c2943e41b8d3d21c33f9a3d, type: 2}
   isDebugMode: 1
+  holdLiftHeight: 1.2
+  towerVariant: {fileID: 11400000, guid: c0a5147a9e8195f4ca72578f95f1ac3b, type: 2}
+--- !u!114 &324971104410713288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304171116053184874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd88489354fd6f74bb8f9f68a82e6e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tower.TowerVariantReference
+  variant: {fileID: 11400000, guid: c0a5147a9e8195f4ca72578f95f1ac3b, type: 2}
 --- !u!1 &6469254254262763516
 GameObject:
   m_ObjectHideFlags: 0

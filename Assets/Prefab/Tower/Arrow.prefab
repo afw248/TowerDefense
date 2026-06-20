@@ -133,3 +133,5 @@ MonoBehaviour:
   WhatEnemy:
     serializedVersion: 2
     m_Bits: 0
+  hitEffect: {fileID: 11400000, guid: 1c9b625520afd2b43a343c2245558c37, type: 2}
+  damage: 10

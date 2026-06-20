@@ -3,17 +3,21 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+    [field: SerializeField]
     public AbstractPlayer CurrentOccupant { get; private set; }
 
-    // 타일에 누군가 진입했을 때 호출
+    public bool IsEmpty => CurrentOccupant == null;
+
     public void Occupy(AbstractPlayer occupant)
     {
+        if (occupant == null)
+            return;
+
         CurrentOccupant = occupant;
     }
+
     public void Vacant()
     {
         CurrentOccupant = null;
     }
-    public bool IsEmpty => CurrentOccupant == null;
-
 }

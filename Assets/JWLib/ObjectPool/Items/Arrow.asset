@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edc68f72925deb6b54cef985a6fe7cf288c3fa7a0949617066353aae2bce3e58
-size 563
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c5f6566816455f9f3300c866543d54, type: 3}
+  m_Name: Arrow
+  m_EditorClassIdentifier: ObjectPool::JWLib.ObjectPool.Runtime.PoolItemSO
+  itemName: Arrow
+  prefab: {fileID: 3213511407504617327, guid: 3c8817bc7fd16ae4e9c6a0d3d7b1586f, type: 3}
+  initCount: 0

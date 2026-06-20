@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:07dfd7543683b0080844b16a98cabca7872911375b4055843fed29e2d2864894
-size 579
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6736949a2867463dbf8cb635edf28e18, type: 3}
+  m_Name: IDLE State
+  m_EditorClassIdentifier: Assembly-CSharp::Agents.FSM.StateSO
+  stateName: IDLE
+  className: PlayerIdleState
+  assetIndex: 0
+  stateParam: {fileID: 11400000, guid: f86ca82b17455a048bdedf6781fd0efb, type: 2}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4490970058520500}
   - component: {fileID: 33922995508602946}
   - component: {fileID: 23937056281637894}
+  - component: {fileID: 1169220014752125496}
   m_Layer: 0
   m_Name: Cube_GroundWGrass
   m_TagString: Untagged
@@ -90,3 +91,15 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1169220014752125496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141756196039588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e10aa97562409f469e7470077a1be87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tile

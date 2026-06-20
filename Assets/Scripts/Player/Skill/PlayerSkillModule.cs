@@ -58,7 +58,6 @@ namespace Player
             // 이미 사용 중이면 무시
             if (_currentSkill != null)
                 return;
-
             if (_skillDict.TryGetValue(skillIndex, out ISkill skill))
             {
                 _currentSkill = skill;
@@ -66,6 +65,28 @@ namespace Player
                 _currentSkill.OnSkillEnd += InvokeSkillEnd;
 
                 skill.UseSkill(target);
+            }
+        }
+
+        public void StopCurrentSkill()
+        {
+            ForceStopAllSkills();
+        }
+
+        public void ForceStopAllSkills()
+        {
+            if (_currentSkill != null)
+            {
+                _currentSkill.OnSkillEnd -= InvokeSkillEnd;
+                _currentSkill = null;
+            }
+
+            foreach (ISkill skill in _skillDict.Values)
+            {
+                if (skill is PlayerAttackSkill attackSkill)
+                    attackSkill.ForceStopForDrag();
+                else if (skill.IsUsing)
+                    skill.StopSkill();
             }
         }
 

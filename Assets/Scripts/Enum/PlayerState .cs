@@ -1,5 +1,5 @@
 
-namespace Player
+namespace FSM
 {
     public enum PlayerState  
     {

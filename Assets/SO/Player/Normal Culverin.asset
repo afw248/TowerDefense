@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f349e1510a60fcb329f22844cf5ea88a961075b29c6050792b1a26cf8f03f57
-size 576
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55491b309881d274ba2da0cb771d12f6, type: 3}
+  m_Name: Normal Culverin
+  m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerDataSO
+  <DetectRadius>k__BackingField: 8
+  <ViewAngle>k__BackingField: 360
+  <StopDistance>k__BackingField: 1.2
+  <Attack>k__BackingField: 12

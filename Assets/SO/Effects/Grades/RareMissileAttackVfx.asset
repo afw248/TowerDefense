@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bba7000664dcbb46ab426145f597365, type: 3}
+  m_Name: RareMissileAttackVfx
+  m_EditorClassIdentifier: Assembly-CSharp::CoreSystem.EffectSystem.TowerAttackVfxDataSO
+  effectPrefab: {fileID: 6117246562120744675, guid: caba7a88a31445a4f903c7984b8ce78d, type: 3}
+  scale: 2.2
+  lifetime: 0.9
+  positionOffset: {x: 0, y: 0, z: 0}
+  impactPlacement: 2
+  fastProjectileImpact: 1
+  directDamageMultiplier: 0
+  effectDamageMultiplier: 1
+  damageRadius: 2.5
+  damageTickInterval: 0
+  includePrimaryInEffectDamage: 0
+  followPrimaryTarget: 0
+  playbackSpeed: 3.2
+  particleWarmupSkip: 0

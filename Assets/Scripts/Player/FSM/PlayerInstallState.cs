@@ -12,7 +12,7 @@ public class PlayerInstallState : AbstractPlayerState
     public override void Enter(float transitionDuration, int layerIndex = 0)
     {
         base.Enter(transitionDuration, layerIndex);
-        _renderer.PlayClip(_stateClipHash, 0, transitionDuration, layerIndex);
+        _renderer?.PlayClip(_stateClipHash, 0, transitionDuration, layerIndex);
         _player.Trigger.OnAnimationEnd += HandleRemoveAnimatioEnd;
     }
     public override void Exit()
@@ -23,6 +23,6 @@ public class PlayerInstallState : AbstractPlayerState
 
     private void HandleRemoveAnimatioEnd()
     {
-        _player.ChangeState(Player.PlayerState.IDLE,0.3f);
+        _player.ChangeState(PlayerState.IDLE,0.3f);
     }
 }

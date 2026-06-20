@@ -6,10 +6,13 @@ namespace CombatSystem
 {
     public class HealthModule : MonoBehaviour, IModule
     {
-        [SerializeField] private float maxHealth;
+        [field:SerializeField] public float maxHealth { get; set; }
         [SerializeField] private float currentHealth;
         
         private ModuleOwner _owner;
+
+        public float CurrentHealth => currentHealth;
+        public float HealthRatio => maxHealth > 0f ? currentHealth / maxHealth : 0f;
 
         public event Action OnDeath;
         
@@ -21,14 +24,35 @@ namespace CombatSystem
 
         public void ApplyDamage(float damageAmount)
         {
-            Debug.Log(damageAmount);
+            if (currentHealth <= 0f || damageAmount <= 0f)
+                return;
+
             currentHealth -= damageAmount;
-            if (currentHealth <= 0)
+            if (currentHealth <= 0f)
             {
-                currentHealth = 0;
+                currentHealth = 0f;
                 OnDeath?.Invoke();
             }
         }
+
+        public void ApplyWaveScaling(float multiplier)
+        {
+            if (multiplier <= 0f)
+                return;
+
+            maxHealth *= multiplier;
+            currentHealth = maxHealth;
+        }
+
+        public void ApplyStatMultiplier(float multiplier)
+        {
+            if (multiplier <= 0f)
+                return;
+
+            maxHealth *= multiplier;
+            currentHealth = maxHealth;
+        }
+
         public void StatUp(float multply)
         {
             maxHealth *= multply;

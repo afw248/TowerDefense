@@ -4968,6 +4968,7 @@ GameObject:
   - component: {fileID: 5009078808713582928}
   - component: {fileID: 8286137592458454319}
   - component: {fileID: 3014824285141876726}
+  - component: {fileID: 1106106454159240984}
   m_Layer: 0
   m_Name: NormalBow
   m_TagString: Untagged
@@ -5040,6 +5041,21 @@ MonoBehaviour:
   <PlayerData>k__BackingField: {fileID: 11400000, guid: 65e4fc0be2b44dc449d29e4705c64d51, type: 2}
   <playerStates>k__BackingField: {fileID: 11400000, guid: 061e1f8b8c2943e41b8d3d21c33f9a3d, type: 2}
   isDebugMode: 1
+  holdLiftHeight: 1.2
+  towerVariant: {fileID: 11400000, guid: 125b5433df81c99499420e98e8e9c175, type: 2}
+--- !u!114 &1106106454159240984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944268695453981906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd88489354fd6f74bb8f9f68a82e6e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Tower.TowerVariantReference
+  variant: {fileID: 11400000, guid: 125b5433df81c99499420e98e8e9c175, type: 2}
 --- !u!1 &4228009837731280951
 GameObject:
   m_ObjectHideFlags: 0
@@ -5087,6 +5103,12 @@ MonoBehaviour:
   <SkillData>k__BackingField: {fileID: 11400000, guid: cabd3f03695b2884891722679f75f833, type: 2}
   skillParamSO: {fileID: 11400000, guid: 39d47e6967bc8f4488c367f31d3c3468, type: 2}
   crossfadeDuration: 0.15
+  hitEffect: {fileID: 11400000, guid: 1c9b625520afd2b43a343c2245558c37, type: 2}
+  attackVfx: {fileID: 11400000, guid: b5da5991a31a02d45a140cdf8027af2c, type: 2}
+  projectileData: {fileID: 11400000, guid: 23def22bb03f9834fa8301b0327aad7e, type: 2}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
   firePoint: {fileID: 3275326638283097306}
   dust: {fileID: 2603313543952980604}
 --- !u!1 &4853688861355209050
@@ -5133,7 +5155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d66f19183fd44b7b47aea5deb44f1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CombatSystem.HealthModule
-  maxHealth: 1000
+  <maxHealth>k__BackingField: 0
   currentHealth: 0
 --- !u!1 &5023761416012131540
 GameObject:

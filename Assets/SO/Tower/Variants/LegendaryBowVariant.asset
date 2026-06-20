@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a2336d536c61e4a9723660a9f87961, type: 3}
+  m_Name: LegendaryBowVariant
+  m_EditorClassIdentifier: Assembly-CSharp::Tower.TowerVariantSO
+  grade: 3
+  archetype: 0
+  playerData: {fileID: 11400000, guid: 7d921c5076919d247ac4e47dcc409df2, type: 2}
+  attackVfx: {fileID: 11400000, guid: b2c2c2fef1d412541baf0015bc9aad3f, type: 2}
+  towerPrefab: {fileID: 1944268695453981906, guid: 8ff254ddc5e97ad4598ebd614ce4ec51, type: 3}
+  fattyPolyVisualPrefab: {fileID: 1148000520969658, guid: c590396c52ca50c408a3ca168ab56f93, type: 3}

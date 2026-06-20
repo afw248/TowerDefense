@@ -14,7 +14,8 @@ public class PlayerRemoveState : AbstractPlayerState
     public override void Enter(float transitionDuration, int layerIndex = 0)
     {
         base.Enter(transitionDuration, layerIndex);
-        _renderer.PlayClip(_stateClipHash, 0, transitionDuration, layerIndex);
+        _renderer?.PlayClip(_stateClipHash, 0, transitionDuration, layerIndex);
+        _player.SkillModule.StopCurrentSkill();
         _player.SkillModule.InvokeSkillEnd();
         _agentTrigger = _player.GetModule<AgentTrigger>();
         if (_agentTrigger != null)
@@ -24,7 +25,7 @@ public class PlayerRemoveState : AbstractPlayerState
     }
     private void HandleRemoveAnimationEnd()
     {
-        _player.gameObject.SetActive(false);
+        _player.Remove();
     }
     public override void Exit()
     {
@@ -35,5 +36,5 @@ public class PlayerRemoveState : AbstractPlayerState
             _agentTrigger.OnAnimationEnd -= HandleRemoveAnimationEnd;
         }
     }
-    //³ªÁß¿¡ ÀÌ°Å DIsableÇØÁÖ±â
+    //ï¿½ï¿½ï¿½ß¿ï¿½ ï¿½Ì°ï¿½ DIsableï¿½ï¿½ï¿½Ö±ï¿½
 }
